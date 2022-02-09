@@ -10,7 +10,7 @@ For more info on Bootstrap, visit the official [Bootstrap Docs](https://getboots
 
 Some reusable components are provided as snippets in the [project's wiki](https://github.com/SaiKiru/cc14-uc-website/wiki).
 
-The things to be done are in the repository's [Projects tab](https://github.com/SaiKiru/cc14-uc-website/projects/1).
+The things to be done are in the repository's [Projects tab](https://github.com/users/SaiKiru/projects/1).
 
 For questions, you may [open an issue](https://github.com/SaiKiru/cc14-uc-website/issues/new).
 
