@@ -47,3 +47,15 @@ a[class~="btn-link"][class~="text-primary"]:hover {
 .bg-muted-light {
     background-color: var(--muted-light-color);
 }
+
+#banner-university-photo {
+    filter:
+        saturate(0.80)
+        brightness(1.40)
+        contrast(0.70);
+}
+
+#careerPaths .card:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
