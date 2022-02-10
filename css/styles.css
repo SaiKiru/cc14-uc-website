@@ -1,9 +1,15 @@
 :root {
     --primary-color: #198754;
+    --light-color: #f8f9fa;
 }
 
 .bg-primary {
     background-color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .text-primary {
@@ -12,4 +18,27 @@
 
 .border-primary {
     border-color: var(--primary-color) !important;
+}
+
+/* CUSTOM CLASSES */
+
+/* Button with Icons */
+.btn-iconed {
+    height: 72px;
+    text-align: left;
+}
+
+.btn-iconed[class~="text-primary"]:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color) !important;
+}
+
+/* Text Button */
+a[class~="btn-link"] {
+    width: fit-content;
+}
+
+a[class~="btn-link"][class~="text-primary"]:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color) !important;
 }
