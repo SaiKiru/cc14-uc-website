@@ -2,6 +2,14 @@
     --primary-color: #198754;
     --light-color: #f8f9fa;
     --muted-light-color: #d3d6d3;
+
+    --highlight-bg-color: #1ba163;
+    --highlight-text-color: #f8f9fa;
+}
+
+::selection {
+    background-color: var(--highlight-bg-color);
+    color: var(--highlight-text-color);
 }
 
 .bg-primary {
