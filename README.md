@@ -14,3 +14,9 @@ The things to be done are in the repository's [Projects tab](https://github.com/
 
 For questions, you may [open an issue](https://github.com/SaiKiru/cc14-uc-website/issues/new).
 
+# Github Pages
+
+Due to the way Github Pages work, root relative links `/../.../..` do not work correctly. All root relative links have been prepended with `/cc14-uc-website`.
+
+Before deploying to another server, replace all `"/cc14-uc-website/` to `"/`
+
