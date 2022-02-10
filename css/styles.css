@@ -1,5 +1,6 @@
 :root {
     --primary-color: #198754;
+    --dark-green-color: #193a2a;
     --light-color: #f8f9fa;
     --muted-light-color: #d3d6d3;
 
@@ -66,4 +67,8 @@ a[class~="btn-link"][class~="text-primary"]:hover {
 #careerPaths .card:hover {
     background-color: var(--primary-color);
     color: var(--light-color);
+}
+
+.bg-dark-green {
+    background-color: var(--dark-green-color);
 }
