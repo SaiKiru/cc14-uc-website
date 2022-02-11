@@ -1,3 +1,14 @@
+/*
+    BREAKPOINTS -1
+
+    --xs: 0px;
+    --sm: 575px;
+    --md: 767px;
+    --lg: 991px;
+    --xl: 1199px;
+    --xxl: 1399px
+*/
+
 :root {
     --primary-color: #198754;
     --dark-green-color: #193a2a;
@@ -71,4 +82,23 @@ a[class~="btn-link"][class~="text-primary"]:hover {
 
 .bg-dark-green {
     background-color: var(--dark-green-color);
+}
+
+.carousel[class~="enrollment-carousel"] {
+    width: 640px;
+    height: 640px;
+}
+
+@media screen and (max-width: 1199px) {
+    .carousel[class~="enrollment-carousel"] {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .carousel[class~="enrollment-carousel"] {
+        width: auto;
+        height: auto;
+    }
 }
