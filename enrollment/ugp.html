@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University of the Cordilleras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+
+  <div>
+    <div class="row w-100 overflow-scroll" style="max-height: 100vh;">
+      <!-- TOC -->
+      <div class="d-none d-lg-block col-3 position-absolute h-100 bg-dark-green p-4 pt-4 overflow-scroll">
+        <p class="h2 text-light">
+          Contents
+        </p>
+
+        <hr class="bg-light" />
+
+        <ul class="list-unstyled ps-1">
+          <li class="mb-3">
+            <a href="#requirements" class="link-light fw-bold text-decoration-none">Requirements</a>
+
+            <ul class="list-unstyled ps-3 mt-2">
+              <li class="mb-3">
+                <a href="#req-freshman" class="link-light fw-bold text-decoration-none">Incoming Freshman</a>
+              </li>
+              <li class="mb-3">
+                <a href="#req-transferee" class="link-light fw-bold text-decoration-none">Tranferees</a>
+              </li>
+              <li class="mb-3">
+                <a href="#req-returning" class="link-light fw-bold text-decoration-none">Returning Students</a>
+              </li>
+              <li class="mb-3">
+                <a href="#req-shifter" class="link-light fw-bold text-decoration-none">Shifters</a>
+              </li>
+              <li class="mb-3">
+                <a href="#req-cross-enrollee" class="link-light fw-bold text-decoration-none">Cross-enrollees</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mb-3">
+            <a href="#procedures" class="link-light fw-bold text-decoration-none">Procedures</a>
+
+            <!-- New Students -->
+            <a href="#freshman" class="d-block ps-3 mt-2 link-light fw-bold text-decoration-none">Incoming Freshman</a>
+            <ul class="list-unstyled ps-3 mt-2">
+              <li class="mb-3">
+                <a href="#freshman-step-1" class="link-light fw-bold text-decoration-none">1. Admission Form</a>
+              </li>
+              <li class="mb-3">
+                <a href="#freshman-step-2" class="link-light fw-bold text-decoration-none">2. Admission
+                  Confirmation</a>
+              </li>
+              <li class="mb-3">
+                <a href="#freshman-step-3" class="link-light fw-bold text-decoration-none">3. Payment
+                  Transferees</a>
+              </li>
+              <li class="mb-3">
+                <a href="#freshman-step-4" class="link-light fw-bold text-decoration-none">4. Enrollment
+                  Confirmation</a>
+              </li>
+              <li class="mb-3">
+                <a href="#illustrative-guide-freshman" class="link-light fw-bold text-decoration-none">Illustrative
+                  Guide</a>
+              </li>
+            </ul>
+
+            <hr />
+
+            <!-- Old Students -->
+            <a href="#old-stude" class="d-block ps-3 mt-2 link-light fw-bold text-decoration-none">Old / Continuing
+              Students</a>
+            <ul class="list-unstyled ps-3 mt-2">
+              <li class="mb-3">
+                <a href="#old-stude-step-1" class="link-light fw-bold text-decoration-none">1. Student Portal</a>
+              </li>
+              <li class="mb-3">
+                <a href="#old-stude-step-2" class="link-light fw-bold text-decoration-none">2. Logging In</a>
+              </li>
+              <li class="mb-3">
+                <a href="#old-stude-step-3" class="link-light fw-bold text-decoration-none">3. Online Advising</a>
+              </li>
+              <li class="mb-3">
+                <a href="#old-stude-step-4" class="link-light fw-bold text-decoration-none">4. Select Courses</a>
+              </li>
+              <li class="mb-3">
+                <a href="#old-stude-step-5" class="link-light fw-bold text-decoration-none">5. Save Courses</a>
+              </li>
+              <li class="mb-3">
+                <a href="#old-stude-step-6" class="link-light fw-bold text-decoration-none">6. Payment</a>
+              </li>
+              <li class="mb-3">
+                <a href="#old-stude-step-7" class="link-light fw-bold text-decoration-none">7. Enrollment
+                  Confirmation</a>
+              </li>
+              <li class="mb-3">
+                <a href="#old-stude-step-8" class="link-light fw-bold text-decoration-none">8. Schedule Confirmation</a>
+              </li>
+              <li class="mb-3">
+                <a href="#illustrative-guide-old-stude" class="link-light fw-bold text-decoration-none">Illustrative
+                  Guide</a>
+              </li>
+            </ul>
+
+            <hr />
+
+            <!-- Transferee -->
+            <a href="#transferee" class="d-block ps-3 mt-2 link-light fw-bold text-decoration-none">Transferee</a>
+            <ul class="list-unstyled ps-3 mt-2">
+              <li class="mb-3">
+                <a href="#transferee-step-1" class="link-light fw-bold text-decoration-none">1. Verification of
+                  Records</a>
+              </li>
+              <li class="mb-3">
+                <a href="#transferee-step-2" class="link-light fw-bold text-decoration-none">2. Admission Form</a>
+              </li>
+              <li class="mb-3">
+                <a href="#transferee-step-3" class="link-light fw-bold text-decoration-none">3. Encoding</a>
+              </li>
+              <li class="mb-3">
+                <a href="#transferee-step-4" class="link-light fw-bold text-decoration-none">4. Payment</a>
+              </li>
+            </ul>
+
+            <hr />
+
+            <!-- Returning Students -->
+            <a href="#returning" class="d-block ps-3 mt-2 link-light fw-bold text-decoration-none">Returning Student</a>
+            <ul class="list-unstyled ps-3 mt-2">
+              <li class="mb-3">
+                <a href="#returning-1" class="link-light fw-bold text-decoration-none">One Term</a>
+              </li>
+              <li class="mb-3">
+                <a href="#returning-2" class="link-light fw-bold text-decoration-none">More than One Term</a>
+              </li>
+            </ul>
+
+            <hr />
+
+            <!-- Shifter -->
+            <a href="#shifter" class="d-block ps-3 mt-2 link-light fw-bold text-decoration-none">Shifter</a>
+            <ul class="list-unstyled ps-3 mt-2">
+              <li class="mb-3">
+                <a href="#shifter-step-1" class="link-light fw-bold text-decoration-none">1.Letter of Intent</a>
+              </li>
+              <li class="mb-3">
+                <a href="#shifter-step-2" class="link-light fw-bold text-decoration-none">2. Approval</a>
+              </li>
+            </ul>
+
+            <hr />
+
+            <!-- Cross-Enrollee -->
+            <a href="#cross-enrollee"
+              class="d-block ps-3 mt-2 link-light fw-bold text-decoration-none">Cross-Enrollee</a>
+            <ul class="list-unstyled ps-3 mt-2">
+              <li class="mb-3">
+                <a href="#cross-enrollee-step-1" class="link-light fw-bold text-decoration-none">1. Check
+                  Availability</a>
+              </li>
+              <li class="mb-3">
+                <a href="#cross-enrollee-step-2" class="link-light fw-bold text-decoration-none">2. Submission of
+                  Documents</a>
+              </li>
+              <li class="mb-3">
+                <a href="#cross-enrollee-step-3" class="link-light fw-bold text-decoration-none">3. Admission Form</a>
+              </li>
+              <li class="mb-3">
+                <a href="#cross-enrollee-step-4" class="link-light fw-bold text-decoration-none">4.. Registration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contents -->
+      <div class="col-lg-9 p-0 article ms-auto">
+        <div class="p-4 p-sm-5">
+          <h1>Undergraduate Programs</h1>
+
+          <hr />
+
+          <!-- Requirements -->
+          <div>
+            <div>
+              <h2 id="requirements">Requirements</h2>
+
+              <p>As a general policy, a student applicant who complies with the admission documents and eligibility
+                requirements may enroll.</p>
+            </div>
+
+            <!-- Body -->
+            <div class="row ps-4">
+              <div class=" col-lg-9">
+                <div>
+                  <h3 id="req-freshman">Incoming Freshman</h3>
+                  <ul>
+                    <li>Original Form 138 (Report Card) / Alternative Learning System (ALS) Certificate of Rating</li>
+                    <li>Original Copy of Birth Certificate</li>
+                  </ul>
+
+
+                  <div>
+                    <p class="mb-2">Additional Requirements:</p>
+                    <ul>
+                      <li>
+                        <p class="mb-1"><b>For ALS/PEPT Passers</b>:</p>
+                        <p>ALS Rating Certificate</p>
+                      </li>
+                      <li>
+                        <p class="mb-1"><b>For 1<sup>st</sup> to 11<sup>th</sup> Rank, Best-in-Science, Mathematics,
+                            English;
+                            Editor-in-Chief, Student Government President</b>:</p>
+                        <p>Certification of Honors signed by the high school principal stating of the honor received.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div>
+                  <h3 id="req-transferee">Transferees</h3>
+                  <ul>
+                    <li>Original copy of the Transfer Credential</li>
+                    <li>Transcript of Records or Certification of grades from the last school attended</li>
+                    <li>Photocopy of PSA Birth Certificate</li>
+                    <li>Certificate of Good Moral Character</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 id="req-returning" class="mb-0">Returning Students</h3>
+                  <p class="text-muted">(stopped for 1 or more term/s)</p>
+                  <ul>
+                    <li>Account Clearance Slip</li>
+                    <li>Curriculum Checklist</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 id="req-shifter">Shifter or Change of Academic Programs</h3>
+                  <ul>
+                    <li>Letter of Intent to transfer to another program</li>
+                    <li>Curriculum Checklist</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 id="req-cross-enrollee">Cross-enrollees</h3>
+                  <ul>
+                    <li>Original copy of Cross-Enrolment Permit from the school of origin</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- QR -->
+              <div class="col-lg-3">
+                <a href="https://bit.ly/uc-admission-college">
+                  <img src="./img/ugp/qr.png" class="float-lg-end img-fluid m-auto d-block">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Procedures -->
+          <div>
+            <div>
+              <h2 id="procedures">Procedures</h2>
+            </div>
+
+
+            <!-- Freshman -->
+            <div>
+              <p id="freshman" class="h5">Incoming Freshman</p>
+              <div class="ps-4">
+                <div>
+                  <h3 id="freshman-step-1" class="fw-bold">Step 1</h3>
+                  <p>
+                    Accomplish the <a href="https://bit.ly/uc-admission-college"
+                      class="text-primary text-decoration-none">Online UC Admission
+                      Form</a>
+                  </p>
+                </div>
+                <div>
+                  <h3 id="freshman-step-2" class="fw-bold">Step 2</h3>
+                  <p>
+                    A confirmation message will be sent via SMS or email.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="freshman-step-3" class="fw-bold">Step 3</h3>
+                  <p>
+                    After admission, courses shall be encoded. Pre-registration Form of enrolled courses assessed fees
+                    and
+                    payment instructions shall be sent via email.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="freshman-step-4" class="fw-bold">Step 4</h3>
+                  <p>
+                    Pay fees through the following payment options.
+                  </p>
+
+                  <div class="ms-4">
+                    <p class="mb-1 fw-bold">Option 1</p>
+                    <p><b>Cashier's Office</b>, UC Main Campus (Monday to Saturday, 8:00AM to 5:00PM)</p>
+                  </div>
+                  <div class="ms-4">
+                    <p class="mb-1 fw-bold">Option 2</p>
+                    <p class="mb-0"><b>Banks</b> (BDO/ METROBANK/ PNB/ RCBC/ UNIONBANK)</p>
+                    <p><i>*No account numbers needed</i></p>
+
+                    <ul>
+                      <li class="mb-3">
+                        Online Banking thru Bank's Mobile App or Bank's Website, use <b>BILLS PAYMENT</b> option
+                      </li>
+                      <li>
+                        Over the Counter using <b>PAYMENT SLIP</b> or <b>BILLS COLLECTION SLIP</b>
+                        <p class="mt-2 mb-0">Biller/Company's Name: <b>University of the Cordilleras</b></p>
+                        <p class="mb-0">Subscriber's Name: <b>'Student's Full Name'</b></p>
+                        <p class="mb-0">Subscriber's Number: <b>'Student's Temporary ID Number'</b></p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p>
+                    Send proof of payments indicating the student's name
+                    to
+                    <a href="mailto:hei.payments@uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">hei.payments@uc-bcf.edu.ph</a>.
+                  </p>
+                </div>
+                <div>
+                  <h3 class="h5 fw-bold">Note:</h3>
+                  <p>
+                    The official registration form, student ID and Official UC e-mail account shall be sent via email.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="mb-4">
+                  <h2 id="illustrative-guide-freshman">Ilustrative Guide</h2>
+                </div>
+
+                <div id="carouselIndicatorsFreshman"
+                  class="d-block carousel slide carousel-dark enrollment-carousel m-auto" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicatorsFreshman" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsFreshman" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsFreshman" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsFreshman" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsFreshman" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsFreshman" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsFreshman" data-bs-slide-to="6"
+                      aria-label="Slide 7"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./img/ugp/freshman-slide-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/ugp/freshman-slide-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/ugp/freshman-slide-3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/ugp/freshman-slide-4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/ugp/freshman-slide-5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/ugp/freshman-slide-6.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/ugp/freshman-slide-7.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsFreshman"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsFreshman"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Old Students -->
+            <div>
+              <p id="old-stude" class="h5">Old Students / Continuing Students</p>
+              <div class="ps-4">
+                <div>
+                  <h3 id="old-stude-step-1" class="fw-bold">Step 1</h3>
+                  <p>
+                    Log in to <a href="https://mystudentportal.uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">UC Student Portal</a>
+                  </p>
+                </div>
+                <div>
+                  <h3 id="old-stude-step-2" class="fw-bold">Step 2</h3>
+                  <p>
+                    Input student USERNAME and PASSWORD and click 'LOGIN NOW'.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="old-stude-step-3" class="fw-bold">Step 3</h3>
+                  <p>
+                    Click 'Enrollment' > 'Online Advising' > 'Proceed'.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="old-stude-step-4" class="fw-bold">Step 4</h3>
+                  <p>
+                    Select courses and schedules to reserve and click 'Proceed'.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="old-stude-step-5" class="fw-bold">Step 5</h3>
+                  <p>
+                    Save selected courses by clicking the 'Save' button.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="old-stude-step-6" class="fw-bold">Step 6</h3>
+                  <p>
+                    Pay fees through the following payment options.
+                  </p>
+
+                  <div class="ms-4">
+                    <p class="mb-1 fw-bold">Option 1</p>
+                    <p><b>Cashier's Office</b>, UC Main Campus (Monday to Saturday, 8:00AM to 5:00PM)</p>
+                  </div>
+                  <div class="ms-4">
+                    <p class="mb-1 fw-bold">Option 2</p>
+                    <p class="mb-0"><b>Banks</b> (BDO/ METROBANK/ PNB/ RCBC/ UNIONBANK)</p>
+                    <p><i>*No account numbers needed</i></p>
+
+                    <ul>
+                      <li class="mb-3">
+                        Online Banking thru Bank's Mobile App or Bank's Website, use <b>BILLS PAYMENT</b> option
+                      </li>
+                      <li>
+                        Over the Counter using <b>PAYMENT SLIP</b> or <b>BILLS COLLECTION SLIP</b>
+                        <p class="mt-2 mb-0">Biller/Company's Name: <b>University of the Cordilleras</b></p>
+                        <p class="mb-0">Subscriber's Name: <b>'Student's Full Name'</b></p>
+                        <p class="mb-0">Subscriber's Number: <b>'Student's Temporary ID Number'</b></p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p>
+                    Send proof of payments indicating the student's name
+                    to
+                    <a href="mailto:hei.payments@uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">hei.payments@uc-bcf.edu.ph</a>.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="old-stude-step-7" class="fw-bold">Step 7</h3>
+                  <p>
+                    The official registration form shall be sent via email.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="old-stude-step-8" class="fw-bold">Step 8</h3>
+                  <p>
+                    View confirmed class schedule by Logging-in to your Student Portal, click on 'Enrollment' > 'Subject
+                    Load Schedule'.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="mb-4">
+                  <h2 id="illustrative-guide-old-stude">Illustrative Guide</h2>
+                </div>
+
+                <div id="carouselIndicatorsOldStude"
+                  class="d-block carousel slide carousel-dark enrollment-carousel m-auto" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="0"
+                      class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="3"
+                      aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="4"
+                      aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="5"
+                      aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="6"
+                      aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="7"
+                      aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="8"
+                      aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselIndicatorsOldStude" data-bs-slide-to="9"
+                      aria-label="Slide 10"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./img/jd/old-stude-slide-1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-6.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-7.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-8.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-9.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/jd/old-stude-slide-10.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsOldStude"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsOldStude"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Transferee -->
+            <div>
+              <p id="transferee" class="h5">Transferee</p>
+              <div class="ps-4">
+                <div>
+                  <h3 id="transferee-step-1" class="fw-bold">Step 1</h3>
+                  <p class="mb-1">
+                    Submit a PDF copy of the Transcript of Records to the Registrar through <a
+                      href="mailto:hei.registrar@uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">hei.registrar@uc-bcf.edu.ph</a> for verification of
+                    records.
+                  </p>
+                  <p class="ps-4 text-muted">
+                    Note: Upon verification, OTR shall be forwarded to the ADmitting Dean for evaluation of earned
+                    units/courses. Student shall be notified when to proceed with the Step 2 of the enrollment.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="transferee-step-2" class="fw-bold">Step 2</h3>
+                  <p>
+                    Accomplish the <a href="https://bit.ly/uc-admission-college"
+                      class="text-primary text-decoration-none">Online UC Admission
+                      Form</a> and forwards a copy of accomplished admission form to the admitting college.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="transferee-step-3" class="fw-bold">Step 3</h3>
+                  <p class="mb-1">
+                    College enrollment Advisers shall register/ encode student courses.
+                  </p>
+                  <p class="ps-4 text-muted">
+                    Note: Pre-registration form of enrolled courses, assessed fees and payment instructions shall be
+                    sent through your email.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="transferee-step-4" class="fw-bold">Step 4</h3>
+                  <p>
+                    Pay fees through the following payment options.
+                  </p>
+
+                  <div class="ms-4">
+                    <p class="mb-1 fw-bold">Option 1</p>
+                    <p><b>Cashier's Office</b>, UC Main Campus (Monday to Saturday, 8:00AM to 5:00PM)</p>
+                  </div>
+                  <div class="ms-4">
+                    <p class="mb-1 fw-bold">Option 2</p>
+                    <p class="mb-0"><b>Banks</b> (BDO/ METROBANK/ PNB/ RCBC/ UNIONBANK)</p>
+                    <p><i>*No account numbers needed</i></p>
+
+                    <ul>
+                      <li class="mb-3">
+                        Online Banking thru Bank's Mobile App or Bank's Website, use <b>BILLS PAYMENT</b> option
+                      </li>
+                      <li>
+                        Over the Counter using <b>PAYMENT SLIP</b> or <b>BILLS COLLECTION SLIP</b>
+                        <p class="mt-2 mb-0">Biller/Company's Name: <b>University of the Cordilleras</b></p>
+                        <p class="mb-0">Subscriber's Name: <b>'Student's Full Name'</b></p>
+                        <p class="mb-0">Subscriber's Number: <b>'Student's Temporary ID Number'</b></p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p>
+                    Send proof of payments indicating the student's name
+                    to
+                    <a href="mailto:shs.payments@uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">shs.payments@uc-bcf.edu.ph</a>.
+                  </p>
+                </div>
+                <div>
+                  <h3 class="h5 fw-bold">Note:</h3>
+                  <p>
+                    The official registration form, student ID and Official UC e-mail account shall be sent via email.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Returning Students -->
+            <div>
+              <p id="returning" class="h5">Returning Students</p>
+              <div class="ps-4">
+                <!-- 1 Term -->
+                <p id="returning-1" class="h6 text-decoration-underline">Stopped for ONE (1) term:</p>
+                <div>
+                  <h3 id="returning-1-step-1" class="fw-bold">Step 1</h3>
+                  <p class="mb-1">
+                    Request for Account Clearance (account slip) through <a href="mailto:hei.accounting@uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">hei.accounting@uc-bcf.edu.ph</a>
+                  </p>
+                  <p class="text-muted ps-4">
+                    Note: Settle unpaid balance to enable access to Enrollment portal.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="returning-1-step-2" class="fw-bold">Step 2</h3>
+                  <p>
+                    Coordinate with the College-Enrollment Advisers for re-evaluation of curriculum checklist. Upon
+                    approval, student shall proceed to online enrollment.
+                  </p>
+                </div>
+
+                <hr />
+
+                <!-- >1 Term -->
+                <p id="returning-2" class="h6 text-decoration-underline">Stopped for MORE THAN ONE (>1) term:</p>
+                <div>
+                  <h3 id="returning-2-step-1" class="fw-bold">Step 1</h3>
+                  <p class="mb-1">
+                    Request for Account Clearance (account slip) through <a href="mailto:hei.accounting@uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">hei.accounting@uc-bcf.edu.ph</a>
+                  </p>
+                  <p class="text-muted ps-4">
+                    Note: Settle unpaid balance to enable access to Enrollment portal.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="returning-2-step-2" class="fw-bold">Step 2</h3>
+                  <p>
+                    Coordinate with the College-Enrollment Advisers for re-evaluation of curriculum checklist.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="returning-2-step-3" class="fw-bold">Step 3</h3>
+                  <p>
+                    Enrollment Advisers shall assist and facilitate student's enrollment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Shifter -->
+            <div>
+              <p id="shifter" class="h5">Shifter / Change of Academic Program</p>
+              <div class="ps-4">
+                <div>
+                  <h3 id="shifter-step-1" class="fw-bold">Step 1</h3>
+                  <p>
+                    Student writes a letter of intent to shift/change Academic Program then submits to the College Dean
+                    for Approval.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="shifter-step-2" class="fw-bold">Step 2</h3>
+                  <p>
+                    Sent approved letter and True copy of Grades to the admitting College for evaluation. Upon approval,
+                    Enrollment Advisers shall assist and facilitate student's enrollment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Cross-Enrollee -->
+            <div>
+              <p id="cross-enrollee" class="h5">Cross-Enrollee</p>
+              <div class="ps-4">
+                <div>
+                  <h3 id="cross-enrollee-step-1" class="fw-bold">Step 1</h3>
+                  <p>
+                    Student coordinates with the concerned College for course availability.
+                  </p>
+                </div>
+                <div>
+                  <h3 id="cross-enrollee-step-2" class="fw-bold">Step 2</h3>
+                  <p>
+                    If course is available, student shall submit and email the College endorsement and Permit to
+                    Cross-enroll documents issued by the originating School for the issuance of Enrollment Admission
+                    slip through <a href="mailto:hei.registrar@uc-bcf.edu.ph"
+                      class="text-primary text-decoration-none">hei.registrar@uc-bcf.edu.ph.</a>
+                  </p>
+                </div>
+                <div>
+                  <h3 id="cross-enrollee-step-3" class="fw-bold">Step 3</h3>
+                  <p>
+                    Upon evaluation, student shall accomplish the <a href="https://bit.ly/uc-admission-college"
+                      class="text-primary text-decoration-none">Online UC Admission
+                      Form</a>
+                  </p>
+                </div>
+                <div>
+                  <h3 id="cross-enrollee-step-4" class="fw-bold">Step 4</h3>
+                  <p>
+                    Enrollment Advisers shall register student courses and Enrollment Pre-Registration Form of enrolled
+                    courses, assessed fees and payment instructions shall be sent via email.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
