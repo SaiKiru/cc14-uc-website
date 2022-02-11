@@ -83,3 +83,22 @@ a[class~="btn-link"][class~="text-primary"]:hover {
 .bg-dark-green {
     background-color: var(--dark-green-color);
 }
+
+.carousel[class~="enrollment-carousel"] {
+    width: 640px;
+    height: 640px;
+}
+
+@media screen and (max-width: 1199px) {
+    .carousel[class~="enrollment-carousel"] {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .carousel[class~="enrollment-carousel"] {
+        width: auto;
+        height: auto;
+    }
+}
