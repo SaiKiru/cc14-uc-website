@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1 {text-align: center;}
+
+.container{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+  
+}
+
+.front,
+.back{
+  background-size: cover;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+}
+
+.back{
+  background: rgb(0, 112, 9);
+  background: -webkit-linear-gradient(45deg, #d4fdd2  0%,#0c8b01 100%);
+  background: -o-linear-gradient(45deg, #d4fdd2  0%,#0c8b01 100%);
+  background: linear-gradient(45deg,  #d4fdd2  0%,#0c8b01 100%);
+}
+
+.front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: rgb(2, 7, 3);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Contact Us</h1>
+
+<div class="container">
+  <div class="front" style="background-image: url(http://ntuyan206.weebly.com/uploads/4/4/0/0/44001699/5033892_orig.jpg)">
+    <div class="inner">
+      <h2>University of the Cordilleras</h2>
+    </div>
+  </div>
+  <div class="back">
+    <div class="inner">
+      <p>Governor Pack Road, Baguio City 2600, PH</p>
+      <a href="mailto:email@uc-bcf.edu.ph">email@uc-bcf.edu.ph</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="front" style="background-image: url(https://cherrymay1620.files.wordpress.com/2016/10/university_of_the_cordilleras-_0.jpg)">
+    <div class="inner">
+      <h2>Main Campus and Legarda Campus</h2>
+    </div>
+  </div>
+  <div class="back">
+    <div class="inner">
+      <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:+63 74 442 3316">+63 74 442 3316</a>
+      <br>
+      <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:+63 74 442 2564">+63 74 442 2564</a>
+      <br>
+      <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:+63 74 442 8219">+63 74 442 8219</a>
+      <br>
+      <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:+63 74 442 8220">+63 74 442 8220</a>
+      <br>
+      <i class="fa fa-fax" style="font-size:24px"></i><a href="tel:+63 74 442 6268">+63 74 442 6268</a>(FAX)
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="front" style="background-image: url(https://scontent.fmnl17-4.fna.fbcdn.net/v/t31.18172-8/14633684_1507322415950103_4725536670533664080_o.jpg?_nc_cat=105&ccb=1-5&_nc_sid=9267fe&_nc_ohc=KGRNOeAtjIEAX-0-c19&_nc_ht=scontent.fmnl17-4.fna&oh=00_AT-wz-InDjEEbwHT1qbKpD1NgqvfKqOJMZXENMskDP7Qtw&oe=6231A676)">
+    <div class="inner">
+      <h2>Libertad Campus</h2>
+    </div>
+  </div>
+  <div class="back">
+    <div class="inner">
+      <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:+63 74 445 5784
+      ">+63 74 445 5784</a>– Principal’s Office
+      <br>
+      <i class="fa fa-phone" style="font-size:24px"></i><a href="tel:+63 74 445 5785">+63 74 445 5785</a>– Registrar Office
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
