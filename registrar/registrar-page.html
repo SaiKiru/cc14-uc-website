@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1 {text-align: center;}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.collapsible {
+  background-color: rgb(18, 129, 55);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(7, 243, 97);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #9ef19e;
+}
+</style>
+</head>
+
+<body>
+    <h1 id="title">Registrar</h1>
+      
+      <div>
+        <div class="row">
+          <div class="column" style="background-color: white;">
+            <h2>Services</h2>
+            <i class="fa fa-check" style="font-size:24px"></i><b>Issuance of School Documents
+            </b>
+            <p>Transcript of records, diploma, certifications, transfer credentials, and other school documents
+              <p><i>(International Assessment Verification - WES, ICAS, CGFNS, etc)</i></p>
+            </p>
+            <i class="fa fa-check" style="font-size:24px"></i><b>Enrollment
+            </b>
+            <p>Admission credentials, evaluation and confirmation
+            </p>
+            <i class="fa fa-check" style="font-size:24px"></i><b>International Students
+            </b>
+            <p>Admission, student visa processing <i>(9f – conversion and extension)</i>
+            </p>
+            <i class="fa fa-check" style="font-size:24px"></i><b>Processing of USVA and PVAO Grantees
+            </b>
+            <p></p>
+            <i class="fa fa-check" style="font-size:24px"></i><b>Scholarships
+            </b>
+            <p>Entrance scholars, academic scholars, CHED Scholars
+            </p>
+            <i class="fa fa-check" style="font-size:24px"></i><b>Certification, Authentication, Verification (CAV
+            </b>
+            <p>For CHED/DFA, employment (local & abroad), PRC Exam
+            </p>
+            <i class="fa fa-check" style="font-size:24px"></i><b>Identification Card Issuance and Validation
+            </b>
+            </div>
+
+          <div class="column" style="background-color: white;">
+            <h2>Service Hours</h2>
+              <p>8:00 am - 12:00 pm and 1:00 pm – 5:00 pm</p> 
+              <p>Mondays to Saturdays except on holidays and class suspensions</p>
+              <br>
+              <h2>Contact Information</h2>
+<!--for contact stuff-->
+<button class="collapsible">Helpdesk</button>
+<div class="content">
+  <i class="fa fa-phone" style="font-size:24px">&nbsp;</i><a href="tel:+63 74 442 3316">+63 74 442 3316 </a> local 169, 111, 211 
+              <br>
+              <i class="fa fa-mobile" style="font-size:24px">&nbsp;</i><a href="tel:++63 935 495 2165">+63 935 495 2165 </a>
+              <br>
+              <i class="fa fa-mobile" style="font-size:24px">&nbsp;</i><a href="tel:+63 929 354 2239">+63 929 354 2239 </a>
+</div>
+<button class="collapsible">General Correspondence / Student Records</button>
+<div class="content">
+              <i class="fa fa-envelope" style="font-size:24px"></i>&nbsp;<a href="mailto:registrar@uc-bcf.edu.ph"> registrar@uc-bcf.edu.ph</a>
+</div>
+<button class="collapsible">Admission / Enrollment</button>
+<div class="content">
+              <i class="fa fa-envelope" style="font-size:24px"></i>&nbsp;<a href="mailto:hei.registrar@uc-bcf.edu.ph"> hei.registrar@uc-bcf.edu.ph</a>
+</div>
+<button class="collapsible">International Students</button>
+<div class="content">
+              <i class="fa fa-envelope" style="font-size:24px"></i>&nbsp;<a href="mailto:intl.registrar@uc-bcf.edu.ph"> intl.registrar@uc-bcf.edu.ph</a>
+</div>
+<button class="collapsible">Document Verification</button>
+<div class="content">
+              <i class="fa fa-envelope" style="font-size:24px"></i>&nbsp;<a href="mailto:UCRegistrar_verify@uc-bcf.edu.ph"> UCRegistrar_verify@uc-bcf.edu.ph</a>
+</div>
+<button class="collapsible">SHS</button>
+<div class="content">
+              <i class="fa fa-envelope" style="font-size:24px"></i>&nbsp;<a href="mailto:shs.registrar@uc-bcf.edu.ph"> shs.registrar@uc-bcf.edu.ph</a>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+              
+          </div>
+        </div>
+      </div>  
+  </main>
+  
+
+</body>
+</html>
