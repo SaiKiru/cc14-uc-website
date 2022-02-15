@@ -102,3 +102,23 @@ a[class~="btn-link"][class~="text-primary"]:hover {
         height: auto;
     }
 }
+
+.header-news-carousel .carousel-item {
+    height: 70vh;
+}
+
+.header-news-carousel .carousel-item img {
+    object-fit: contain;
+    max-width: 60vw;
+}
+
+@media screen and (max-width: 991px) {
+    .header-news-carousel .carousel-item {
+        height: unset;
+    }
+
+    .header-news-carousel .carousel-item img {
+        max-width: 100%;
+        height: auto;
+    }
+}
