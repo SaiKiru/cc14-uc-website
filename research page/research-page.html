@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+
+
+.collapsible {
+  background-color: rgb(247, 247, 247);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(7, 243, 97);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(7, 243, 97);;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fdfffd;
+}
+main {
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  border: 5px solid green;
+  padding: 30px;
+  margin: 20px;
+}
+li {margin: 10px 0;}
+</style>
+</head>
+
+<body>
+  <h1>The University of the Cordilleras Research Agenda</h1>
+    <main>
+    <p>The University of the Cordilleras Research Agenda, with the cross-cutting priority disciplinal thrusts, leans towards academic and social development by means of effective, sustainable, relevant, and quality knowledge transfer. Research is maximized through cross-college cooperation, external linkage and collaboration, and multidisciplinary/interdisciplinary approach to come up with advancing the contributions of the university in the nation’s social, cultural, health, environmental, educational, and economic development. The enrichment of the research culture in the university by utilizing the capability and productivity of its faculty members and students is greatly emphasized to attain the institution’s vision, mission, and objectives.</p> 
+    <br>
+    </main>
+    
+    <h1>The University of the Cordilleras Research Thrust</h1>
+    <main>
+    <p>In the pursuit of attaining quality assurance through the University of The Cordilleras’ trifocal function to teach, to research and to extend its services to the community, it is the aim of the university, through the Research & Development Center, to contribute its research expertise to the society and the country.</p> 
+    <p>Quality defined by the Commission on Higher Education (CHED) as 1) fitness for purpose, 2) exceptional, and 3) ‘developing a culture of quality’ shall go hand-in-hand with relevance in pursuing the vision, mission, and objectives of UC through research, teaching, and extension. With these, the university has focused its research & development thrusts to eight cluster disciplines. The research thrusts are the main areas to be engaged in by faculty, non-teaching researchers, and students with the aim of augmenting knowledge, applications and policies towards the development of the institution and the society.</p> 
+    
+  <button class="collapsible">The following are the priority research discipline cluster areas:</button>
+  <div class="content">
+    <ul>
+      <li>Education</li>
+      <li>Environmental Studies</li>
+      <li>Engineering and Technology</li>
+      <li>Economics, Accounting and Management</li>
+      <li>Health Sciences</li>
+      <li>Indigenous Knowledge Systems & Practices</li>
+      <li>Public Safety and Governance</li>
+      <li>Geographic Information Science/System</li>
+    </ul>
+    </div>
+
+      <p>To further make best use of research through its multidisciplinary nature, the Geographic Information Science/System shall be embedded in each of the cluster disciplines. GIS in its most general sense is not only considered a tool but an innovation in the field of research as it cuts and crosses disciplinal boundaries. This research focus of the university interacts with the National Higher Education Research Agenda-2, focusing on multidisciplinary approach, policy-oriented studies, researches on quality and standards, institutional development studies, manpower and academic excellence studies, integrative studies, socially-oriented and community-based studies, and other researches in response to emerging needs of the county.</p> 
+      <p>All academic and scholarly studies shall be evaluated based on their applicability to the other cluster areas and should cut across disciplines. With this, it should be known that outputs from the researches undertaken are outcomes-based to be applied in quality education through its effectiveness, efficiency, sustainability, and relevance.</p> 
+      <p>The R&DC shall also assist and facilitate researchers in conducting possible studies along with the University’s trilogy of function on research, instruction, and extension from research thrusts identified in the National Higher Education Research Agenda 2 (NHERA - 2): 2009- 2018 of the Commission on Higher Education (CHEd) (CHEd, 2012), as well as Department of Science and Technology (DOST) priority areas in basic research identified by the National Research Council of the Philippines (NRCP).</p> 
+      <p>The University of the Cordilleras research agenda is based on priority thrusts as reflected in the NHERA – 2 (2009-2018).</p>
+      <ol>
+        <li>Program/curricular studies on higher education – clusters of disciplines including assessment of present programs/curricula for purposes of determining how these could be improved, as well as international benchmarking of best practices towards the development of new programs/curricula in leading edge discipline.</li>
+        
+        <li><button class="collapsible">Policy-oriented studies – research on the various dimensions of policy formulation, implementation, monitoring, and evaluation focusing on, but not limited to, the following, such as:</button>
+          <div class="content">
+            <ul>
+              <li>Financing higher education; cost sharing in higher education</li>
+              <li>Economics of educational program</li>
+              <li>Governance and management of higher education</li>
+              <li>Accreditation and other quality assurance mechanism</li>
+              <li>Rationalizing higher education courses/programs or studies</li>
+              <li>Internationalization of higher education</li>
+              <li>Student financing model</li>
+            </ul>
+            </div></li>
+
+        <li><button class="collapsible">Research on quality and standards in the context of:</button>
+          <div class="content">
+            <ul>
+              <li>International rankings and global benchmarking</li>
+              <li>Quality assurance systems</li>
+              <li>Equivalency</li>
+              <li>Redefining classifications of HEIs</li>
+            </ul>
+            </div></li>
+        <li>Institutional development studies</li>
+        <li>Manpower supply and demand</li>
+        <li>Graduate tracer study</li>
+        <li>Researchers in the field of engineering, information technology, business, accounting, finance & economics, and hospitality industry & tourism.</li>
+        <li>Integrative studies in social sciences and natural sciences, as well as humanities, linguistics, criminology, and other disciplines.</li>
+        <li>Socially-oriented and community-based studies.</li>
+        <li>Other research topics considered by CHED and other organizations/agencies in response to emerging needs of the country.</li>
+      </ol>
+    </main>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+              
+          </div>
+        
+       
+  </main>
+  
+
+</body>
+</html>
