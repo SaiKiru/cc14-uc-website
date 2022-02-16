@@ -11,7 +11,7 @@
 
 :root {
     --primary-color: #198754;
-    --dark-green-color: #193a2a;
+    --dark-green-color: #192921;
     --light-color: #f8f9fa;
     --muted-light-color: #d3d6d3;
 
@@ -31,6 +31,12 @@
 .nav-link {
     font-weight: bold;
     font-size: 1.2em;
+}
+
+.nav-pills .active {
+    border-radius: 0px;
+    color: var(--light-color) !important;
+    background-color: var(--primary-color) !important;
 }
 
 .text-primary {
