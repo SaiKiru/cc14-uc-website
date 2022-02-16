@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1 {text-align: center;}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.collapsible {
+  background-color: green;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(7, 243, 97);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(255, 255, 255);;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fdfffd;
+}
+main {
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  border: 5px solid green;
+  padding: 30px;
+  margin: 20px;
+}
+li {margin: 10px 0;}
+a {color: green;}
+</style>
+</head>
+
+<body>
+  <h1>Career Opportunities</h1>    
+    <main>
+      <div>
+        <div class="row">
+          <div class="column" style="background-color: white;">
+            <h2>Foreign Language Instructors</h2>    
+  <button class="collapsible">Qualifications:</button>
+  <div class="content">
+    <ul>
+      <li>Bachelor’s Degree in Foreign Language and other related programs with specialization in Mandarin language and/or Spanish Language</li>
+      <li>Preferably with Master’s Degree in the field of specialization</li>
+      <li>Must have relevant trainings in field of specialization
+      </li>
+    </ul>
+    </div>
+    <br>
+    <h2>Clinical Instructors</h2>    
+  <button class="collapsible">Qualifications:</button>
+  <div class="content">
+    <ul>
+      <li>Bachelor’s Degree in Nursing with license</li>
+      <li>Preferably with Master’s Degree in any related field of specialization</li>
+      <li>Must have experience in teaching as college instructor, relevant hospital and community work</li>
+    </ul>
+    </div>
+    <br>
+    <h2>School Nurse</h2>    
+  <button class="collapsible">Qualifications:</button>
+  <div class="content">
+    <ul>
+      <li>Bachelor’s degree in Nursing and with license</li>
+      <li>Preferably with experience as ER Nurse</li>
+      <li>With training in basic occupational safety and health</li>
+    </ul>
+    </div>
+  </div>
+        <div class="column" style="background-color: white;">
+            <h3>Requirements</h3>
+              <ul><li>Application Letter Addressed to: Director, HRDO</li>
+              <li>Comprehensive Resume</li>
+              <li>Photocopy of:</button>
+                  <ul>
+                    <li>Transcript of Records</li>
+                    <li>Certificate of Employment</li>
+                    <li>Certificate of trainings & Seminars and the like</li>
+                    <li>Applicable professional license</li>
+                  </ul>
+                  </li>
+              <li>1 copy of 2 x 2 picture</li></ul>
+              <h3>Apply at the</h3>
+              <p>University of the Cordilleras<br>
+                Human Resource Development Office<br>
+                UC Main Building, Room M502</p>
+              
+              <i class="fa fa-phone" style="font-size:24px">&nbsp;</i><a href="tel:+63 74 442 3316">+63 74 442 3316</a> local 112 
+              <br>
+              <i class="fa fa-envelope" style="font-size:24px"></i>&nbsp;<a href="mailto:hrd@uc-bcf.edu.ph"> hrd@uc-bcf.edu.ph</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+</body>
+</html>
