@@ -7,11 +7,713 @@
   <title>University of the Cordilleras</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="/cc14-uc-website/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Navigation Bar -->
+  <div class="navbar navbar-expand-lg navbar-light bg-primary py-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/cc14-uc-website/index.html"><img src="/cc14-uc-website/img/uc-logo.png"
+          height="90"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
+        aria-expanded="false" aria-controls="#navBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navBar">
+        <ul class="navbar-nav ms-auto">
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown px-3 position-static">
+            <a class="nav-link text-light active" href="#" data-bs-toggle="dropdown">
+              About
+            </a>
+
+            <div class="dropdown-menu w-100 m-0 p-4 bg-light border-0 rounded-0 rounded-bottom shadow">
+              <div class="row">
+                <div class="row col-lg-7">
+                  <!-- UC Logo -->
+                  <div class="col-sm-4 d-none d-sm-flex flex-column align-items-center justify-content-center">
+                    <div>
+                      <img src="/cc14-uc-website/img/uc-logo.png">
+                    </div>
+                  </div>
+
+                  <!-- Overview -->
+                  <div class="col-sm-8 col-lg-7">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Founded</td>
+                          <td>June 19, 1956</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Founders</td>
+                          <td>
+                            <ul class="list-unstyled mb-0">
+                              <li>Benjamin R. Salvosa</li>
+                              <li>Evangelina D. Salvosa</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Type</td>
+                          <td>
+                            <ul class="list-unstyled mb-0">
+                              <li>Private non-sectarian</li>
+                              <li>Research Non-profit</li>
+                              <li>Coeducational Basic</li>
+                              <li>Higher Education Institution</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Academic Calendar</td>
+                          <td>
+                            <ul class="list-unstyled mb-0">
+                              <li>Trimester</li>
+                              <li>Semester (Law &amp; Nursing)</li>
+                            </ul>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Academic Colleges</td>
+                          <td>10</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <a href="/cc14-uc-website/about/more-about-uc.html" role="button"
+                      class="btn btn-link border-primary text-primary fw-bold text-decoration-none text-start d-block my-1 py-2 mt-4">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <!-- Links -->
+                  <div>
+                    <p class="h4 mb-3 mt-5 d-block d-sm-none">Links</p>
+
+                    <a href="/cc14-uc-website/about/history.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      History of UC
+                    </a>
+                    <a href="/cc14-uc-website/about/founders.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Founders
+                    </a>
+                    <a href="/cc14-uc-website/about/board-of-trustees.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Board of Trustees
+                    </a>
+                    <a href="/cc14-uc-website/about/organizational-structure.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Organizational Structure
+                    </a>
+                    <a href="/cc14-uc-website/about/campus-map.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Campus Map
+                    </a>
+                  </div>
+
+                  <hr />
+
+                  <!-- Contact Us -->
+                  <div>
+                    <a href="/cc14-uc-website/about/contact-us.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Enrollment Dropdown -->
+          <li class="nav-item dropdown px-3 position-static">
+            <a class="nav-link text-light active" href="#" data-bs-toggle="dropdown">
+              Enrollment
+            </a>
+
+            <div class="dropdown-menu w-100 m-0 p-4 bg-light border-0 rounded-0 rounded-bottom shadow">
+              <div class="row">
+                <!-- Grade School and Junior High School -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <p class="h4 mb-3">Grade School &amp; Junior High School</p>
+
+                  <a href="/cc14-uc-website/enrollment/gs-jhs.html#requirements" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Requirements
+                  </a>
+                  <a href="/cc14-uc-website/enrollment/gs-jhs.html#procedures" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Procedures
+                  </a>
+
+                  <a href="https://bit.ly/uc-gsjhs-admission" role="button"
+                    class="btn btn-link border-primary text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2 w-75">
+                    Enroll Now
+                  </a>
+                </div>
+
+                <!-- Senior High School -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <p class="h4 mb-3">Senior High School</p>
+
+                  <a href="/cc14-uc-website/enrollment/shs.html#requirements" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Requirements
+                  </a>
+                  <a href="/cc14-uc-website/enrollment/shs.html#procedures" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Procedures
+                  </a>
+
+                  <a href="https://bit.ly/uc-shs-admission" role="button"
+                    class="btn btn-link border-primary text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2 w-75">
+                    Enroll Now
+                  </a>
+                </div>
+
+                <!-- Undergraduate Programs -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <p class="h4 mb-3">Undergraduate Programs</p>
+
+                  <a href="/cc14-uc-website/enrollment/ugp.html#requirements" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Requirements
+                  </a>
+                  <a href="/cc14-uc-website/enrollment/ugp.html#procedures" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Procedures
+                  </a>
+
+                  <a href="https://bit.ly/uc-admission-college" role="button"
+                    class="btn btn-link border-primary text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2 w-75">
+                    Enroll Now
+                  </a>
+                </div>
+
+                <!-- Graduate Programs -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <p class="h4 mb-3">Graduate Programs</p>
+
+                  <a href="/cc14-uc-website/enrollment/gp.html#requirements" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Requirements
+                  </a>
+                  <a href="/cc14-uc-website/enrollment/gp.html#procedures" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Procedures
+                  </a>
+
+                  <a href="https://bit.ly/uc-admission-college" role="button"
+                    class="btn btn-link border-primary text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2 w-75">
+                    Enroll Now
+                  </a>
+                </div>
+
+                <!-- Juris Doctor -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <p class="h4 mb-3">Juris Doctor</p>
+
+                  <a href="/cc14-uc-website/enrollment/jd.html#requirements" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Requirements
+                  </a>
+                  <a href="/cc14-uc-website/enrollment/jd.html#procedures" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Procedures
+                  </a>
+
+                  <a href="https://bit.ly/uc-admission-college" role="button"
+                    class="btn btn-link border-primary text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2 w-75">
+                    Enroll Now
+                  </a>
+                </div>
+
+                <!-- International Students -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                  <p class="h4 mb-3">International Students</p>
+
+                  <a href="/cc14-uc-website/enrollment/intl.html#requirements" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Requirements
+                  </a>
+                  <a href="/cc14-uc-website/enrollment/intl.html#procedures" role="button"
+                    class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Procedures
+                  </a>
+
+                  <a href="https://bit.ly/uc-admission-college" role="button"
+                    class="btn btn-link border-primary text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2 w-75">
+                    Enroll Now
+                  </a>
+                </div>
+              </div>
+
+              <hr />
+
+              <a href="/cc14-uc-website/enrollment/scholarship.html" role="button"
+                class="btn btn-link text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2">
+                I want to apply for a scholarship.
+              </a>
+            </div>
+          </li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item dropdown px-3 position-static">
+            <a class="nav-link text-light active" href="#" data-bs-toggle="dropdown">
+              Academics
+            </a>
+
+            <div class="dropdown-menu w-100 m-0 p-4 bg-light border-0 rounded-0 rounded-bottom shadow">
+              <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <!-- INTEGRATED SCHOOL -->
+                  <div>
+                    <p class="h4 mb-3">Integrated School</p>
+
+                    <a href="/cc14-uc-website/academics/gs-jhs.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Grade School &amp; Junior School
+                    </a>
+
+                    <a href="/cc14-uc-website/academics/shs.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Senior High School
+                    </a>
+                  </div>
+
+                  <!-- ETEEAP -->
+                  <div class="mt-4">
+                    <p class="h4 mb-3">ETEEAP</p>
+                    <a href="/cc14-uc-website/academics/eteeap.html" role="button"
+                      class="btn btn-link border-primary text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+
+                <!-- COLLEGES -->
+                <div class="col-lg-8">
+                  <div class="row">
+                    <p class="h4 mb-3">Undergraduate and Graduate Programs</p>
+
+                    <div class="col-md-6">
+                      <a href="/cc14-uc-website/academics/coa.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/coa_logo.png" class="pe-3" style="width: 86px;">
+                        Accountancy
+                      </a>
+                      <a href="/cc14-uc-website/academics/cas.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/cas_logo.png" class="pe-3" style="width: 86px;">
+                        Arts and Sciences
+                      </a>
+                      <a href="/cc14-uc-website/academics/cba.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/cba_logo.png" class="pe-3" style="width: 86px;">
+                        Business Administration
+                      </a>
+                      <a href="/cc14-uc-website/academics/ccje.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/ccje_logo.png" class="pe-3" style="width: 86px;">
+                        Criminal Justice Education
+                      </a>
+                      <a href="/cc14-uc-website/academics/cea.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/cea_logo.png" class="pe-3" style="width: 86px;">
+                        Engineering &amp; Architecture
+                      </a>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="/cc14-uc-website/academics/chtm.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/chtm_logo.png" class="pe-3" style="width: 86px;">
+                        Hospitality &amp; Tourism
+                      </a>
+                      <a href="/cc14-uc-website/academics/citcs.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/citcs_logo.png" class="pe-3" style="width: 86px;">
+                        Information Technology &amp; Computer Science
+                      </a>
+                      <a href="/cc14-uc-website/academics/col.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/col_logo.png" class="pe-3" style="width: 86px;">
+                        Law
+                      </a>
+                      <a href="/cc14-uc-website/academics/con.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/con_logo.png" class="pe-3" style="width: 86px;">
+                        Nursing
+                      </a>
+                      <a href="/cc14-uc-website/academics/cte.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/academics/cte_logo.png" class="pe-3" style="width: 86px;">
+                        Teacher Education
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Reseach Dropdown -->
+          <li class="nav-item dropdown px-3 position-static">
+            <a class="nav-link text-light active" href="#" data-bs-toggle="dropdown">
+              Research
+            </a>
+
+            <div class="dropdown-menu w-100 m-0 p-4 bg-light border-0 rounded-0 rounded-bottom shadow">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <p class="h4 mb-3">Research Agenda</p>
+
+                    <p>
+                      The University of the Cordilleras Research Agenda, with the cross-cutting priority disciplinal
+                      thrusts,
+                      leans
+                      towards academic and social development by means of effective, sustainable, relevant, and quality
+                      knowledge
+                      transfer. Research is maximized through cross-college cooperation, external linkage and
+                      collaboration, and
+                      multidisciplinary/interdisciplinary approach to come up with advancing the contributions of the
+                      university
+                      in
+                      the nation&apos;s social, cultural, health, environmental, educational, and economic development.
+                      The
+                      enrichment
+                      of
+                      the research culture in the university by utilizing the capability and productivity of its faculty
+                      members
+                      and
+                      students is greatly emphasized to attain the institution&apos;s vision, mission, and objectives.
+                    </p>
+
+                    <a href="/cc14-uc-website/research/university-research-thrust.html" role="button"
+                      class="btn btn-link border-primary text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <p class="h4 mb-3">Research Thrust</p>
+
+                    <p>
+                      In the pursuit of attaining quality assurance through the University of The Cordilleras&apos;
+                      trifocal
+                      function to teach, to research and to extend its services to the community, it is the aim of the
+                      university,
+                      through the Research & Development Center, to contribute its research expertise to the society and
+                      the
+                      country.
+                    </p>
+                  </div>
+
+                  <div>
+                    <p class="h4 mb-3">Offices</p>
+
+                    <a href="/cc14-uc-website/research/research-services-office.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Research Services Office
+                    </a>
+                    <a href="/cc14-uc-website/research/into.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Innovation and Technology Transfer Office
+                    </a>
+                    <a href="/cc14-uc-website/research/tbi.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      UCIANS-TBI
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- International Dropdown -->
+          <li class="nav-item dropdown px-3 position-static">
+            <a class="nav-link text-light active" href="#" data-bs-toggle="dropdown">
+              International
+            </a>
+
+            <div class="dropdown-menu w-100 m-0 p-4 bg-light border-0 rounded-0 rounded-bottom shadow">
+              <div class="row">
+                <div class="col-sm-5">
+                  <!-- Enrollment -->
+                  <div>
+                    <p class="h4 mb-3">Enrollment</p>
+
+                    <a href="/cc14-uc-website/enrollment/intl.html#requirements" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Requirements
+                    </a>
+                    <a href="/cc14-uc-website/enrollment/intl.html#procedures" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Procedures
+                    </a>
+
+                    <a href="https://bit.ly/uc-admission-college" role="button"
+                      class="btn btn-link border-primary text-primary fw-bold text-decoration-none d-block mx-auto my-1 py-2 w-75">
+                      Enroll Now
+                    </a>
+                  </div>
+
+                  <!-- FAQ -->
+                  <div class="mt-4">
+                    <p class="h4 mb-3">Frequently Asked Questions</p>
+
+                    <a href="/cc14-uc-website/intl/faq.html#general-information" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      General Information
+                    </a>
+                    <a href="/cc14-uc-website/intl/faq.html#visa-and-legalities" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Visa and Other Legal Requirements
+                    </a>
+                    <a href="/cc14-uc-website/intl/faq.html#academic-concerns" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Academic Concerns
+                    </a>
+                    <a href="/cc14-uc-website/intl/faq.html#religion" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Spiritual Activities, Student Organizations, and Dress Code
+                    </a>
+                    <a href="/cc14-uc-website/intl/faq.html#authentication" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Authentication of University Records
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 mt-4 mt-sm-0">
+                  <p class="h4 mb-4">Institute for Innovative Learning and International Cooperation</p>
+
+                  <p>
+                    Internationalization has been one of the top priorities of UC. Internationalization is embedded in
+                    all the key
+                    results area in the University&apos;s current strategic plan. For instance, in the key results area
+                    on
+                    education,
+                    the university is working towards the enhancement of the global skills and competence of its faculty
+                    through
+                    mobilization programs in the form of faculty exchange, acceptance of visiting professors and
+                    experts,
+                    strengthening of research collaboration programs with foreign institutions, and attendance in
+                    international
+                    training and conferences, among others.
+                  </p>
+                  <p class="d-none d-md-block">
+                    International partnership agreements and external grants have enabled the University to send faculty
+                    members,
+                    staff, and students to various academic programs, training, conferences, and events in countries
+                    like the
+                    United States, Canada, Thailand, Singapore, South Korea, China, and Malaysia. The said academic
+                    mobility
+                    initiatives have been very beneficial to the UC community. Upon their return to UC, the grantees
+                    were able to
+                    share their experiences with their colleagues, conduct impactful projects and programs, and initiate
+                    policy
+                    reforms that are inspired by the new learning experiences and exposure they have acquired abroad.
+                  </p>
+
+                  <a href="/cc14-uc-website/intl/iilc.html" role="button"
+                    class="btn btn-link border-primary text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Alumni Dropdown -->
+          <li class="nav-item dropdown px-3 position-static">
+            <a class="nav-link text-light active" href="#" data-bs-toggle="dropdown">
+              Alumni
+            </a>
+
+            <div class="dropdown-menu w-100 m-0 p-4 bg-light border-0 rounded-0 rounded-bottom shadow">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <!-- Alumni Affairs Office -->
+                  <div>
+                    <p class="h4 mb-4">Alumni Affairs Office</p>
+
+                    <p>
+                      The fast-growing number of alumni made the university decide to establish an Alumni Office. The
+                      primary
+                      function of the Alumni Office is to act as liaison between the university and its alumni. The
+                      office also
+                      facilitates the giving of timely information regarding university updates, events, programs and
+                      community
+                      projects that the alumni can be part of.
+                    </p>
+
+                    <a href="/cc14-uc-website/alumni/alumni-office.html" role="button"
+                      class="btn btn-link border-primary text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-4 mt-sm-0">
+                  <!-- Alumni Tracer -->
+                  <div>
+                    <p class="h4 mb-4">Alumni Tracer</p>
+
+                    <p>
+                      We invite our UC Alumni to fill up the Alumni Tracer Survey. Your participation is highly
+                      appreciated and
+                      will help us reach out and give further service to our alumni. Kindly share the link to your
+                      fellow
+                      graduates as well.
+                    </p>
+
+                    <a href="https://bit.ly/UCAlumniTracerSurvey">
+                      <img class="d-block m-auto" src="/cc14-uc-website/img/alumni/alumni-tracer-qr.png" height="200"
+                        alt="https://bit.ly/UCAlumniTracerSurvey">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-sm-0">
+                  <!-- Links -->
+                  <div>
+                    <p class="h4 mb-2 d-block d-sm-none">Links</p>
+
+                    <a href="/cc14-uc-website/alumni/uc-stalwart.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Notable Alumni
+                    </a>
+                    <a href="/cc14-uc-website/alumni/tatak-uc.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Legion of Topnotchers
+                    </a>
+                    <a href="/cc14-uc-website/alumni/tatak-jaguar.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      League of Champions
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Campus Life Dropdown -->
+          <li class="nav-item dropdown px-3 position-static">
+            <a class="nav-link text-light active" href="#" data-bs-toggle="dropdown">
+              Campus Life
+            </a>
+
+            <div class="dropdown-menu w-100 m-0 p-4 bg-light border-0 rounded-0 rounded-bottom shadow">
+              <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <!-- Community Engagements -->
+                  <div>
+                    <p class="h4 mb-3">Community Engagements</p>
+
+                    <a href="/cc14-uc-website/campus-life/csr.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Center for Social Responsibility Office
+                    </a>
+                    <a href="/cc14-uc-website/campus-life/project-helen.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Project Helen
+                    </a>
+                    <a href="/cc14-uc-website/campus-life/outreach-programs.html" role="button"
+                      class="btn btn-link text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Outreach Programs
+                    </a>
+                  </div>
+
+                  <!-- Career Opportunities -->
+                  <div class="mt-4">
+                    <p class="h4 mb-3">Job Openings</p>
+
+                    <a href="/cc14-uc-website/campus-life/career-opportunities.html" role="button"
+                      class="btn btn-link border-primary text-primary fw-bold text-decoration-none text-start d-block my-1 py-2">
+                      Apply at UC
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <!-- Student Services -->
+                  <div class="row">
+                    <p class="h4 mb-3">Student Services</p>
+
+                    <div class="col-sm-6">
+                      <a href="/cc14-uc-website/campus-life/career-center.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/career-center.jpg" class="pe-3"
+                          style="width: 86px;">
+                        Career Center
+                      </a>
+                      <a href="/cc14-uc-website/campus-life/guidance-and-counseling.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/guidance-and-counseling.png" class="pe-3"
+                          style="width: 86px;">
+                        Guidance and Counseling
+                      </a>
+                      <a href="/cc14-uc-website/campus-life/libraries.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/libraries.jpg" class="pe-3"
+                          style="width: 86px;">
+                        Libraries
+                      </a>
+                      <a href="/cc14-uc-website/campus-life/student-welfare-and-development.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/student-welfare-and-development.jpg"
+                          class="pe-3" style="width: 86px;">
+                        Student Welfare and Development
+                      </a>
+                      <a href="/cc14-uc-website/campus-life/student-welfare-services.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/student-welfare-services.png" class="pe-3"
+                          style="width: 86px;">
+                        Student Welfare Services
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="/cc14-uc-website/campus-life/registrar.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/registrar.jpg" class="pe-3"
+                          style="width: 86px;">
+                        Registrar
+                      </a>
+                      <a href="/cc14-uc-website/campus-life/center-for-creative-productions.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/center-for-creative-productions.jpg"
+                          class="pe-3" style="width: 86px;">
+                        Center for Creative Productions
+                      </a>
+                      <a href="/cc14-uc-website/campus-life/sports-development-office.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/sports-development-office.png" class="pe-3"
+                          style="width: 86px;">
+                        Sports Development Office
+                      </a>
+                      <a href="/cc14-uc-website/campus-life/legal-aid-clinic.html" role="button"
+                        class="btn btn-iconed text-primary fw-bold w-100 d-flex align-items-center my-2 px-3">
+                        <img src="/cc14-uc-website/img/student-services/legal-aid-clinic.png" class="pe-3"
+                          style="width: 86px;">
+                        Legal Aid Clinic
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="p-3 p-md-4 p-lg-5 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
     <h1 class="mb-4">History of the University of the Cordilleras</h1>
@@ -94,6 +796,128 @@
   </div>
 
   <!-- Footer -->
+  <div class="bg-dark-green text-light">
+
+    <div class="row m-auto px-2 pt-5 pb-2 pb-sm-4">
+      <!-- Links -->
+      <div class="row col-lg-8">
+        <div class="col-sm-4 ps-sm-5 mb-4 mb-sm-0">
+          <ul class="list-unstyled">
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/enrollment/gp.html">Graduate
+                Programs</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/academics/colleges.html">Academic
+                Colleges</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/enrollment/intl.html">International</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/enrollment/eteeap">ETEEAP</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/enrollment/shs.html">Senior High
+                School</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/enrollment/gs-jhs.html">Grade School</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/enrollment/gs-jhs.html">Junior High
+                School</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4 ps-sm-5 mb-4 mb-sm-0">
+          <ul class="list-unstyled">
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none"
+                href="/cc14-uc-website/enrollment/scholarship.html">Scholarship</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none"
+                href="/cc14-uc-website/research/university-research-trust.html">Research</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/campus-life/csr.html">Community</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/alumni/alumni-office.html">Alumni</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/campus-life/career-center">Career</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4 ps-sm-5 mb-4 mb-sm-0">
+          <ul class="list-unstyled">
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none"
+                href="/cc14-uc-website/campus-life/career-opportunities.html">Join Us</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="/cc14-uc-website/about/contact-us.html">Contact Us</a>
+            </li>
+            <li class="small mb-1">
+              <a class="text-light text-decoration-none" href="http://legacy-www.uc-bcf.edu.ph/">Legacy Website</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quick Contact -->
+      <div class="col-sm-6 col-lg-4 mx-auto mx-lg-0 mt-0 mt-sm-4 mt-lg-0">
+        <div class="row d-flex flex-row align-items-center">
+          <!-- School Logo -->
+          <div class="col-3">
+            <img class="img-fluid" src="/cc14-uc-website/img/uc-logo.png">
+          </div>
+
+          <!-- Contact Details -->
+          <div class="col-9">
+            <table class="table table-borderless table-sm text-light">
+              <tbody>
+                <tr>
+                  <th scope="row" class="small">Phone</th>
+                  <td class="ps-4 small">+63 74 442 3316</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="small">Fax</th>
+                  <td class="ps-4 small">+63 74 442 6268</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="small">Email</th>
+                  <td class="ps-4 small">email@uc-bcf.edu.ph</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- School Address -->
+        <div>
+          <p class="small">Governor Pack Road, Baguio City 2600, PH</p>
+        </div>
+
+        <!-- Socials -->
+        <div class="col-6">
+          <div class="d-flex justify-content-around">
+            <a href="https://www.facebook.com/UCjaguars"><i class="fa fa-facebook text-light fs-3"></i></a>
+            <a href="https://twitter.com/UCJaguars"><i class="fa fa-twitter text-light fs-3"></i></a>
+            <a href="https://www.youtube.com/c/UniversityoftheCordillerasUCJaguars/featured"><i
+                class="fa fa-youtube-play text-light fs-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright Notice -->
+    <div>
+      <p class="text-center small py-4 m-0">&copy; University of the Cordilleras. All Rights Reserved.</p>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
