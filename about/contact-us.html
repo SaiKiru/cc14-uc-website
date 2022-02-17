@@ -6,13 +6,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/colors.css" rel="stylesheet">
+  <link href="/cc14-uc-website/css/styles.css" rel="stylesheet">
   <style>
     h1 {
       text-align: center;
     }
 
-    .container {
+    .container[class~="flip"] {
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
       -webkit-perspective: 1000px;
@@ -62,8 +62,8 @@
       border-radius: 10px;
     }
 
-    .container:hover .front,
-    .container:hover .back {
+    .container[class~="flip"]:hover .front,
+    .container[class~="flip"]:hover .back {
       -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
       transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
       -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -94,51 +94,32 @@
       z-index: 2;
     }
 
-    .container .back {
+    .container[class~="flip"] .back {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg);
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
     }
 
-    .container .front {
+    .container[class~="flip"] .front {
       -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
     }
 
-    .container:hover .back {
+    .container[class~="flip"]:hover .back {
       -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
     }
 
-    .container:hover .front {
+    .container[class~="flip"]:hover .front {
       -webkit-transform: rotateY(-180deg);
       transform: rotateY(-180deg);
       -webkit-transform-style: preserve-3d;
       transform-style: preserve-3d;
-    }
-
-    @media screen and (max-width: 64rem) {
-      .col {
-        width: calc(33.333333% - 2rem);
-      }
-    }
-
-    @media screen and (max-width: 48rem) {
-      .col {
-        width: calc(50% - 2rem);
-      }
-    }
-
-    @media screen and (max-width: 32rem) {
-      .col {
-        width: 100%;
-        margin: 0 0 2rem 0;
-      }
     }
   </style>
 </head>
@@ -849,7 +830,7 @@
   <div>
     <h1>Contact Us</h1>
 
-    <div class="container">
+    <div class="container flip">
       <div class="front"
         style="background-image: url(http://ntuyan206.weebly.com/uploads/4/4/0/0/44001699/5033892_orig.jpg)">
         <div class="inner">
@@ -864,7 +845,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container flip">
       <div class="front"
         style="background-image: url(https://cherrymay1620.files.wordpress.com/2016/10/university_of_the_cordilleras-_0.jpg)">
         <div class="inner">
@@ -886,7 +867,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container flip">
       <div class="front"
         style="background-image: url(https://scontent.fmnl17-4.fna.fbcdn.net/v/t31.18172-8/14633684_1507322415950103_4725536670533664080_o.jpg?_nc_cat=105&ccb=1-5&_nc_sid=9267fe&_nc_ohc=KGRNOeAtjIEAX-0-c19&_nc_ht=scontent.fmnl17-4.fna&oh=00_AT-wz-InDjEEbwHT1qbKpD1NgqvfKqOJMZXENMskDP7Qtw&oe=6231A676)">
         <div class="inner">
