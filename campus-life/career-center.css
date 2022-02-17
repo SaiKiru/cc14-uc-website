@@ -1,0 +1,22 @@
+
+body{
+  background-color: floralwhite;
+}
+
+h1{
+  font-family: Times new roman;
+
+}
+h2{
+  font-size: 12px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-family: sans-serif;
+}
+img.one {
+  height: -50%;
+  width: -50%;
+}
